@@ -1,0 +1,150 @@
+:host {
+  display: block;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.hero-stage {
+  position: relative;
+  display: grid;
+  place-items: start center;
+  min-height: clamp(360px, 44.7vw, 500px);
+  padding: 0 0 2px;
+  background: #a1a3a6;
+}
+
+.hero-banner {
+  position: relative;
+  isolation: isolate;
+  width: min(80vw, 1200px);
+  aspect-ratio: 1.79;
+  overflow: hidden;
+  background: #735b4c;
+}
+
+.hero-image,
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  z-index: -2;
+  object-fit: cover;
+  object-position: center 53%;
+}
+
+.hero-shade {
+  z-index: -1;
+  background: linear-gradient(90deg, rgb(21 20 19 / 5%) 25%, rgb(21 20 19 / 28%) 100%), linear-gradient(0deg, rgb(30 25 21 / 27%), transparent 42%);
+}
+
+.hero-copy {
+  position: absolute;
+  right: 4.5%;
+  bottom: 10%;
+  color: #f8f3ec;
+  text-align: right;
+  text-shadow: 0 1px 12px rgb(0 0 0 / 18%);
+}
+
+.hero-copy p {
+  margin: 0 0 2px;
+  font-size: clamp(12px, 1.15vw, 16px);
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(30px, 4vw, 54px);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.carousel-control {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 42px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #171717;
+  cursor: pointer;
+}
+
+.carousel-control svg {
+  width: 27px;
+  height: 27px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.carousel-control:hover {
+  color: #fff;
+}
+
+.previous {
+  left: clamp(8px, 1.6vw, 24px);
+}
+
+.next {
+  right: clamp(8px, 1.6vw, 24px);
+}
+
+.home-followup {
+  min-height: 175px;
+  display: grid;
+  place-items: end center;
+  padding: 32px 20px 0;
+  background: #fff;
+}
+
+.followup-rule {
+  width: min(46vw, 500px);
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background: #292929;
+}
+
+@media (max-width: 700px) {
+  .hero-stage {
+    min-height: 0;
+    padding: 0 0 28px;
+  }
+
+  .hero-banner {
+    width: 100%;
+    aspect-ratio: 1.15;
+  }
+
+  .hero-image {
+    object-position: center;
+  }
+
+  .carousel-control {
+    top: 47%;
+    width: 36px;
+  }
+
+  .previous {
+    left: 3px;
+  }
+
+  .next {
+    right: 3px;
+  }
+
+  .home-followup {
+    min-height: 130px;
+  }
+}

@@ -1,0 +1,39 @@
+<header class="site-header">
+  <nav class="utility-bar" aria-label="Links da conta">
+    <a href="#ajuda">Ajuda</a>
+    <a href="#pedidos">Meus pedidos</a>
+    <a href="#rastreamento">Rastrear pedido</a>
+    <a href="#conta">Entrar com uma conta</a>
+  </nav>
+
+  <div class="main-bar">
+    <a class="brand" href="#inicio" aria-label="Areastra, página inicial">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span>AREASTRA</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Navegação principal">
+      <a href="#loja">Loja <span class="chevron" aria-hidden="true"></span></a>
+      <a href="#promocoes">Promoções <span class="chevron" aria-hidden="true"></span></a>
+      <a href="#categorias">Categorias <span class="chevron" aria-hidden="true"></span></a>
+    </nav>
+
+    <form class="search" role="search" (submit)="$event.preventDefault()">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4 4" /></svg>
+      <input type="search" aria-label="Buscar produtos" placeholder="O que deseja?" />
+    </form>
+
+    <nav class="customer-nav" aria-label="Sua conta">
+      <a href="#carrinho" class="customer-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 1.9-1.4L22 8H6" /><circle cx="10" cy="20" r="1" /><circle cx="18" cy="20" r="1" /></svg>
+        <span>Meu carrinho</span>
+      </a>
+      <a href="#favoritos" class="customer-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 5.2-8.8 11-8.8 11s-8.8-5.8-8.8-11a4.6 4.6 0 0 1 8.8-1.7 4.6 4.6 0 0 1 8.8 1.7Z" /></svg>
+        <span>Favoritos</span>
+      </a>
+    </nav>
+  </div>
+
+  <p class="announcement">Seja filiado à nossa loja e tenha acesso a cupons imperdíveis!</p>
+</header>

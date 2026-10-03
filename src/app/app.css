@@ -1,0 +1,9 @@
+:host {
+	display: block;
+	min-height: 100dvh;
+	color: #252523;
+}
+
+.app-content {
+	min-height: calc(100dvh - 92px);
+}

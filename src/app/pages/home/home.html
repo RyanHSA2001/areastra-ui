@@ -1,0 +1,23 @@
+@let slide = slides[activeSlide()];
+
+<section class="hero-stage" aria-label="Destaques da loja">
+  <div class="hero-banner" id="inicio">
+    <img class="hero-image" [src]="slide.image" [alt]="slide.imageAlt" />
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-copy" aria-live="polite">
+      <p>{{ slide.eyebrow }}</p>
+      <h1>{{ slide.title }}</h1>
+    </div>
+  </div>
+
+  <button class="carousel-control previous" type="button" aria-label="Destaque anterior" (click)="showSlide(-1)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4-8 8 8 8" /></svg>
+  </button>
+  <button class="carousel-control next" type="button" aria-label="Próximo destaque" (click)="showSlide(1)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8" /></svg>
+  </button>
+</section>
+
+<section class="home-followup" aria-label="Novidades">
+  <div class="followup-rule"></div>
+</section>
