@@ -27,7 +27,7 @@
   align-items: center;
   gap: 0;
   background: #f0f0ef;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .utility-bar a {
@@ -80,7 +80,7 @@
 
 .primary-nav {
   gap: clamp(12px, 1.7vw, 24px);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .primary-nav a {
@@ -158,11 +158,25 @@
   padding: 4px 12px;
   background: #e9e9e8;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 a:hover {
   opacity: 0.72;
+}
+
+.brand-mark {
+  display: inline-flex;
+  width: 100px;
+  height: 36px;
+  align-items: center;
+}
+
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @media (max-width: 760px) {
@@ -210,6 +224,5 @@ a:hover {
   .primary-nav {
     justify-content: space-between;
     gap: 9px;
-    font-size: 10px;
   }
 }
